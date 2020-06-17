@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My notes</title>
+        <link rel="stylesheet" href="css/notes.css">
+    </head>
+    <body>
+    <header>
+        <h1 style="margin:0;">My Notes</h1>
+    </header>
+        <h1>General Notes</h1>
+            <ul>
+                <li>Make your full html page before adding in CSS</li>
+            </ul>
+        <h1>HTML/CSS Crash Course</h1>
+            <h2>CSS Basics</h2>
+                <ul>
+                    <li>Inline Elements don't take up more room than their content needs. Examples are span, img, strong, em, a and more</li>
+                    <li>Block Elements take up the whole width of the page regardless of content, such as, p. div, the headlines (h1,2 etc.) ul, li and more. Always start on a new line</li>
+                    <li>Block line elements can have margins all around, but inline elements can only have margins to the left and to the right of the element,but padding goes all the way around for both and padding is inside the margin</li>
+                    <li>Use inline-block to get the best of both worlds because it puts the elements horizontally, but also gives you margins all around</li>
+                </ul>
+            <h2>CSS Classes & Selectors</h2>
+                <ul>
+                    <li>If you want to give an element multiple classes just add another word in the class with a space inbetween</li>
+                    <li>You can only use one id per element</li>
+                    <li>element[attribute] - this so you can targer a certain element with a certain attribute</li>
+                    <li>a[href*="amazon"] {} - delivers CSS to any link with the word amazon in it</li>
+                    <li>a[href$=".com"] {} - delivers CSS to anything that ends in .com </li> 
+                </ul>
+                <h3>The Cascade</h3>
+                    <h4>Inheritence</h4>
+                        <ul>
+                            <li>HTML elements can inherit CSS properties that are applied to their parents</li>
+                            <li>Inheritence mainly works for text based attributes not things like padding and margin, more things like color and font weight</li>
+                        </ul>
+            <h2>HTML5 Semantics</h2>
+                <ul>
+                    <li>main - for the main content of a webpage, unique to that page</li>
+                    <li>section - Defines a certain section of a webpage (e.g. blog list, contact info)</li>
+                    <li>article - Defines a bit of content which makes up an article(e.g. a blog post)</li>
+                    <li>aside - Defines some content related to something else (e.g. similar blogs)</li>
+                    <li>For the header of a website - contains the nav, title etc</li>
+                    <li>footer - for the footer of a website</li>
+                    <li>When making a list it doesnt have to be a traditonal list it can be a list of sites,pictures, etc.</li>
+                </ul>
+            <h2>CSS Layout and Position</h2>
+                <ul>
+                    <li>Position can have 5 values</li>
+                        <ul>
+                            <li>static - default value, keeps element in normal document flow of the webpage</li>
+                            <li>Relative - you can shift the element relative to its original place on the page </li>
+                            <li>fixed - positions an element realtive to the viewpoint. the viewpoint is just the place where we see what's on our browser</li>
+                            <li>absolute - allows us to position things absolutely relative to its closest parent which has alos been given a position property that is not static. when you position something absolutely you take it out of normal document flow</li>
+                            <li>sticky - a mixture of static and fixed. The element stays static until a certain point that you set and then it becomes fixed</li>
+                        </ul>
+                    <li>em multiplies the size of the parent by the value next to the em</li>
+                    <li>z index tells the computer the importance of an element and every element starts off with z index of 0. The higher the z-index number the more important it is for the computer to show</li>
+                    <li>white-space:nowrap makes it so when you use inline block your text/images do not wrap to the next line</li>
+                    <li>When you use margin auto it automatically makes an even about of space on the sides you choose</li>
+                    <li>If you make your left and right margin auto it essentially centers your content Ex: margin: 80px auto; (80px is for top and bottom, auto is fot left and right)</li>
+                    <li>box-sizing: border-box; makes padding inclusive to when 100% max width is set, meaning the page doesn't take padding into account when the page is resized to a smaller than regular width size</li>
+                </ul>
+            <h2>Pseudo Class & Elements</h2>
+                <ul>
+                    <li>Pseudo elements are keywords that you add to selectors to affect elements when they are in a certain state such as hover, focus, first child of a parent element, etc.</li>
+                    <li>:hover class activates when you hover over an element</li>
+                    <li>:focus activates when a element is actively being used</li>
+                    <li>:first child affects only the first child of the parent element</li>
+                    <li>:valid affects the element when the proper value is reached like for example in an email input, when a valid email is put in (meaning it has text and an @ sign, the psuedo class gets activated</li>
+                    <li>::first-line affects only the first line of an element</li>
+                    <li>::selection changes the effect of when something is highlighted, like highlighting text</li>
+                    <li>::after puts things after a certain element while ::before puts things before a certain element</li>
+                </ul>
+            <h2>Intro to Media Queries/Responsive design</h2>
+                <ul>
+                    <li>Media Queries tell the browser how to style an element at particular viewport dimensions</li>
+                    <li>Viewport meta tag tells the browser what width the viewport should be and if we should zoom in or out</li>
+                    <li>Responsive images are images that a loaded at a smaller file size for mobile devices</li>
+                    <li>when planning to make a website responsive you want to have a strategy and clear process put into place. One popular way is a mobile first design path which means designing your website for mobile and then adapting it for larger screens. This is the way to go so you only use the most essential information and style because you do not have a lot of space</li>
+                    <li>the viewport meta tag goes into the head of your HTML file</li>
+
+                </ul>
+    </body>
+</html>
